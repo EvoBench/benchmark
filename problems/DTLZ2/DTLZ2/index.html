@@ -532,7 +532,7 @@
 <p style="font-size: 17px;">O objetivo da função <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span> é <strong><i>maximizar a distancia</i></strong> da POF do problema, atraindo os algorítimos evolutivos a POF locais.</p>
 <p style="font-size: 17px;">Quando o vetor <strong><i>| X<sub>M</sub> |</i></strong> atinge os valores de <strong><i>| 0.5  0.5 .... 0.5 |</i></strong> a POF do problema é encontrada.</p>
 <div class="arithmatex">\[
-\textcolor{darkred}{\boldsymbol{g(X_M)} = 100 \bigg[\big|X_m\big|+\displaystyle\sum_{X_I \in X_M} (xi-0.5)^2-cos(20\pi(X_i-0.5))\bigg]}
+\textcolor{darkred}{\boldsymbol{g(X_M)} = \sum_{X_I\in X_M} (xi-0.5)^2}
 \]</div>
 <h2 id="funcoes-objetivo"><strong>Funções objetivo</strong></h2>
 <p style="font-size: 17px;">Cada função objetivo recebe um valor da função <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span>. A POF do problema esta diretamente ligada a <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span>.</p>
