@@ -488,24 +488,23 @@
 </ul>
 
 <h3 id="camada-1"><strong>Camada 1</strong></h3>
+<p style="font-size: 17px;">Definição das funções objetivo <span style="color: blue;"><strong><i>f<sub>j</sub></i></strong></span> <strong><i>(X)</i></strong>  </p>
 <div class="arithmatex">\[
 \textcolor{blue}{f_{j}}(X)=   \large   \frac{1}{\big[\frac{n}{M}\big]}  \sum\nolimits_{\big[(\text{ j - 1 })\frac{n}{M}\big]}^{\big[j\frac{n}{M}\big]} x_i,
 \]</div>
-<p style="font-size: 17px;">Definição das funções objetivo <span style="color: darkred;"><strong><i>f<sub>j</sub></i></strong></span> <strong><i>(X)</i></strong>  </p>
-
 <h3 id="camada-2"><strong>Camada 2</strong></h3>
 <p style="font-size: 17px;">Definição das Restrições:</p>
 <ul style="font-size:17px;">
   <li><span style="color: darkred;"><strong><i>g<sub>j</sub> (X)</i></strong></span> </li>
 </ul>
 <div class="arithmatex">\[
-\textcolor{blue}{g_{j}}(X) = f_M(X) + 4f_j(X) - 1 \geq 0,
+\textcolor{darkred}{g_{j}}(X) = f_M(X) + 4f_j(X) - 1 \geq 0,
 \]</div>
 <ul style="font-size:17px;">
   <li><span style="color: darkred;"><strong><i>g<sub>M</sub> (X)</i></strong></span> </li>
 </ul>
 <div class="arithmatex">\[
-\textcolor{blue}{g_{M}}(X) = 2 f_M(X) + {\large \min\limits_{\substack{\scriptstyle i,j=1\\ \scriptstyle i\#j}}^{ M-1 }} \text{ } \big[f_i(X)+f_j(X)\big] \geq 0
+\textcolor{darkred}{g_{M}}(X) = 2 f_M(X) + {\large \min\limits_{\substack{\scriptstyle i,j=1\\ \scriptstyle i\#j}}^{ M-1 }} \text{ } \big[f_i(X)+f_j(X)\big] \geq 0
 \]</div>
 <h3 id="camada-3"><strong>Camada 3</strong></h3>
 <p style="font-size: 17px;">Junção do conjunto de restrições <span style="color: darkred;"><strong><i>g<sub>j</sub> (X)</i></strong></span>[:,0:M<sub>-1</sub>]:<span style="color: darkred;"><strong><i>g<sub>M</sub> (X)</i></strong></span>[:,M<sub>-1</sub>:M] que devem devem ser aplicados a todas as funções objetivo [:,M]</p>
