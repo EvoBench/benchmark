@@ -402,6 +402,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#camadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camada-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camada 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camada-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camada 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camada-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camada 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#metodos" class="md-nav__link">
     <span class="md-ellipsis">
       Métodos
@@ -433,16 +469,27 @@
 
 <h1 id="dtlz8"><strong>DTLZ8</strong></h1>
 <h2 id="definicao"><strong>Definição</strong></h2>
-<p style="font-size: 17px;">O problema DTLZ8 possui uma frente ótima de Pareto formada por uma linha reta, definida pela restrição <span style="color: darkred;"><strong><i>g<sub>j</sub> (X)</i></strong></span> e por um hyperplano linear definido pela restrição <span style="color: darkred;"><strong><i>g<sub>M</sub> (X)</i></strong></span></p>
-<div class="arithmatex">\[
-\large\underbrace{\underbrace{\underbrace{\boldsymbol{x_1} , \boldsymbol{x_2} , \boldsymbol{x_3}}_{\boldsymbol{\textcolor{blue}{f_1}(X)} } , \underbrace{\boldsymbol{x_4} , \boldsymbol{x_5} , \boldsymbol{x_6}}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)} }}_{\boldsymbol{\textcolor{darkred}{g_j}(X)}}, \underbrace{\underbrace{\boldsymbol{x_7} , \boldsymbol{x_8} ,\boldsymbol{x_9}}_{\boldsymbol{\textcolor{blue}{f_{M}}(X)} }}_{\boldsymbol{\textcolor{darkred}{g_M}(X)}}}_{\large\boldsymbol{\big[ \boldsymbol{\textcolor{darkred}{g_j}(X):\boldsymbol{\textcolor{darkred}{g_M}(X)}} \big]\geq 0}}
-\]</div>
+<p style="font-size: 17px;">O problema DTLZ8 possui uma frente ótima de Pareto formada por uma linha reta, e por um hyperplano linear.</p>
 <p style="font-size: 17px;">DTLZ8 é definida pelas seguintes variáveis:</p>
 <ul style="font-size:17px;">
   <li><strong><i>M</i></strong>: Número de objetivos do problema</li>
   <li><strong><i>N</i></strong>: Número de variáveis de decisão, representado por: 10<strong><i>M</i></strong></li>
 </ul>
 
+<h3 id="camadas"><strong>Camadas</strong></h3>
+<p style="font-size: 17px;">O problema pode ser divido em <strong><i>3</i></strong> camadas:</p>
+<ul style="font-size:17px;">
+  <li><strong><i>M</i></strong>: A camada 1 define as funções objetivo</li>
+  <li><strong><i>M</i></strong>: A camada 2 define a restrição <span style="color: darkred;"><strong><i>g<sub>j</sub> (X)</i></strong></span> responsável pela formação da linha reta que compõe a POF <span style="color: blue;"><strong><i>f<sub>1</sub></i></strong></span> = <span style="color: blue;"><strong><i>f<sub>2</sub></i></strong></span> = ... <span style="color: blue;"><strong><i>f<sub>M-1</sub></i></strong></span>  e a restrição <span style="color: darkred;"><strong><i>g<sub>M</sub> (X)</i></strong></span> que define o hyperplano Linear. <strong><i>f<sub>M</sub> (X)</i></strong></li>
+  <li><strong><i>M</i></strong>: A camada 3, é o conjunto das restrições[:,<span style="color: darkred;"><strong><i>g<sub>j</sub> (X)</i></strong></span>:<strong><i>f<sub>M</sub> (X)</i></strong></li>]  ≥ 0, que deve possui o mesmo número de elementos de <strong><i>[:,:M]</i></strong> </li>
+</ul>
+
+<div class="arithmatex">\[
+\large\underbrace{\underbrace{\underbrace{\boldsymbol{x_1} , \boldsymbol{x_2} , \boldsymbol{x_3}}_{\boldsymbol{\textcolor{blue}{f_1}(X)} } , \underbrace{\boldsymbol{x_4} , \boldsymbol{x_5} , \boldsymbol{x_6}}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)} }}_{\boldsymbol{\textcolor{darkred}{g_j}(X)}}, \underbrace{\underbrace{\boldsymbol{x_7} , \boldsymbol{x_8} ,\boldsymbol{x_9}}_{\boldsymbol{\textcolor{blue}{f_{M}}(X)} }}_{\boldsymbol{\textcolor{darkred}{g_M}(X)}}}_{\large\boldsymbol{\big[ \boldsymbol{\textcolor{darkred}{g_j}(X):\boldsymbol{\textcolor{darkred}{g_M}(X)}} \big]\geq 0}}
+\]</div>
+<h3 id="camada-1"><strong>Camada 1</strong></h3>
+<h3 id="camada-2"><strong>Camada 2</strong></h3>
+<h3 id="camada-3"><strong>Camada 3</strong></h3>
 <div class="arithmatex">\[
 \textcolor{blue}{f_{j}}(X)=   \large   \frac{1}{\big[\frac{n}{M}\big]}  \sum\nolimits_{\big[(\text{ j - 1 })\frac{n}{M}\big]}^{\big[j\frac{n}{M}\big]} x_i,
 \]</div>
