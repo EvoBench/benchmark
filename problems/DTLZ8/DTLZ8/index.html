@@ -478,7 +478,7 @@
 
 <h2 id="camadas"><strong>Camadas</strong></h2>
 <div class="arithmatex">\[
-\large\underbrace{\underbrace{\underbrace{\boldsymbol{x_1} , \boldsymbol{x_2} , \boldsymbol{x_3}}_{\boldsymbol{\textcolor{blue}{f_1}(X)} } , \underbrace{\boldsymbol{x_4} , \boldsymbol{x_5} , \boldsymbol{x_6}}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)} }}_{\boldsymbol{\textcolor{darkred}{g_j}(X)}}, \underbrace{\underbrace{\boldsymbol{x_7} , \boldsymbol{x_8} ,\boldsymbol{x_9}}_{\boldsymbol{\textcolor{blue}{f_{M}}(X)} }}_{\boldsymbol{\textcolor{darkred}{g_M}(X)}}}_{\large\boldsymbol{\big[ \boldsymbol{\textcolor{darkred}{g_j}(X):\boldsymbol{\textcolor{darkred}{g_M}(X)}} \big]\geq 0}}
+\Large\underbrace{\underbrace{\underbrace{\boldsymbol{x_1} , \boldsymbol{x_2} , \boldsymbol{x_3}}_{\boldsymbol{\textcolor{blue}{f_1}(X)} } , \underbrace{\boldsymbol{x_4} , \boldsymbol{x_5} , \boldsymbol{x_6}}_{\boldsymbol{\textcolor{blue}{f_{M-1}}(X)} }}_{\boldsymbol{\textcolor{darkred}{g_j}(X)}}, \underbrace{\underbrace{\boldsymbol{x_7} , \boldsymbol{x_8} ,\boldsymbol{x_9}}_{\boldsymbol{\textcolor{blue}{f_{M}}(X)} }}_{\boldsymbol{\textcolor{darkred}{g_M}(X)}}}_{\Large\boldsymbol{\big[ \boldsymbol{\textcolor{darkred}{g_j}(X):\boldsymbol{\textcolor{darkred}{g_M}(X)}} \big]\geq 0}}
 \]</div>
 <p style="font-size: 17px;">O problema pode ser divido em <strong><i>3</i></strong> camadas:</p>
 <ul style="font-size:17px;">
@@ -490,7 +490,7 @@
 <h3 id="camada-1"><strong>Camada 1</strong></h3>
 <p style="font-size: 17px;">Definição das funções objetivo <span style="color: blue;"><strong><i>f<sub>j</sub></i></strong></span> <strong><i>(X)</i></strong>  </p>
 <div class="arithmatex">\[
-\boldsymbol{\textcolor{blue}{f_{j}}(X)=   \large   \frac{1}{\big[\frac{n}{M}\big]}  \sum\nolimits_{\big[(\text{ j - 1 })\frac{n}{M}\big]}^{\big[j\frac{n}{M}\big]} x_i},
+\boldsymbol{\textcolor{blue}{f_{j}}}(X)=   \large   \frac{1}{\big[\frac{n}{M}\big]}  \sum\nolimits_{\big[(\text{ j - 1 })\frac{n}{M}\big]}^{\big[j\frac{n}{M}\big]} x_i,
 \]</div>
 <h3 id="camada-2"><strong>Camada 2</strong></h3>
 <p style="font-size: 17px;">Definição das Restrições:</p>
@@ -498,13 +498,13 @@
   <li><span style="color: darkred;"><strong><i>g<sub>j</sub> (X)</i></strong></span> </li>
 </ul>
 <div class="arithmatex">\[
-\boldsymbol{\textcolor{darkred} {g_{j}}(X) = f_M(X) + 4f_j(X) - 1 \geq 0},
+\boldsymbol{\textcolor{darkred}{g_{j}}}(X) = \boldsymbol{\textcolor{blue}{f_M}}(X) + 4\boldsymbol{\textcolor{blue}{f_j}}(X) - 1 \geq 0
 \]</div>
 <ul style="font-size:17px;">
   <li><span style="color: darkred;"><strong><i>g<sub>M</sub> (X)</i></strong></span> </li>
 </ul>
 <div class="arithmatex">\[
-\boldsymbol{\textcolor{darkred}{g_{M}}(X) = 2 f_M(X) + {\large \min\limits_{\substack{\scriptstyle i,j=1\\ \scriptstyle i\#j}}^{ M-1 }} \text{ } \big[f_i(X)+f_j(X)\big] \geq 0}
+\boldsymbol{\textcolor{darkred}{g_{M}}}(X) = 2 \boldsymbol{\textcolor{blue}{f_M}}(X) + {\large \min\limits_{\substack{\scriptstyle i,j=1\\ \scriptstyle i\#j}}^{ M-1 }} \text{ } \big[\boldsymbol{\textcolor{blue}{f_i}}(X)+\boldsymbol{\textcolor{blue}{f_j}}(X)\big] \geq 0
 \]</div>
 <h3 id="camada-3"><strong>Camada 3</strong></h3>
 <p style="font-size: 17px;">Junção do conjunto de restrições <span style="color: darkred;"><strong><i>g<sub>j</sub> (X)</i></strong></span> aplicados a[:,0:M-1] e <span style="color: darkred;"><strong><i>g<sub>M</sub> (X)</i></strong></span> aplicados a [:,M-1:M]</p>
