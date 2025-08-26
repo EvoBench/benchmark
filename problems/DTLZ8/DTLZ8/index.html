@@ -501,24 +501,24 @@
 <h3 id="camada-2"><strong>Camada 2</strong></h3>
 <p style="font-size: 17px;">Definição das Restrições:</p>
 <div class="arithmatex">\[
-\underbrace{\boldsymbol{\textcolor{blue}{f_{1}}(X)} , \boldsymbol{\textcolor{blue}{f_{M-1}}(X)}}_{\large\boldsymbol{\textcolor{darkred}{g_j}(X)} }, \underbrace{\boldsymbol{\textcolor{blue}{f_{M}}(X)}}_{\large\boldsymbol{\textcolor{darkred}{g_M}(X)}}
+\underbrace{\boldsymbol{\textcolor{blue}{f_{1}}(X)} \boldsymbol{\text{ ... }} \boldsymbol{\textcolor{blue}{f_{M-1}}(X)}}_{\large\boldsymbol{\textcolor{darkred}{g_j}(X)} }, \underbrace{\boldsymbol{\textcolor{blue}{f_{M}}(X)}}_{\large\boldsymbol{\textcolor{darkred}{g_M}(X)}}
 \]</div>
 <ul style="font-size:17px;">
   <li><span style="color: darkred;"><strong><i>g<sub>j</sub> (X)</i></strong></span> </li>
 </ul>
 <div class="arithmatex">\[
-\boldsymbol{\textcolor{darkred}{g_{j}}(X)} = \boldsymbol{\textcolor{blue}{f_M}}(X) + 4\boldsymbol{\textcolor{blue}{f_j}}(X) - 1 \geq 0
+\boldsymbol{\textcolor{darkred}{g_{j}}(X)} = \boldsymbol{\textcolor{blue}{f_M}(X)} + 4\boldsymbol{\textcolor{blue}{f_j}(X)} - 1 \geq 0
 \]</div>
 <ul style="font-size:17px;">
   <li><span style="color: darkred;"><strong><i>g<sub>M</sub> (X)</i></strong></span> </li>
 </ul>
 <div class="arithmatex">\[
-\boldsymbol{\textcolor{darkred}{g_{M}}(X)} = 2 \boldsymbol{\textcolor{blue}{f_M}}(X) + {\large \min\limits_{\substack{\scriptstyle i,j=1\\ \scriptstyle i\#j}}^{ M-1 }} \text{ } \big[\boldsymbol{\textcolor{blue}{f_i}}(X)+\boldsymbol{\textcolor{blue}{f_j}}(X)\big] \geq 0
+\boldsymbol{\textcolor{darkred}{g_{M}}(X)} = 2 \boldsymbol{\textcolor{blue}{f_M}(X)} + {\large \min\limits_{\substack{\scriptstyle i,j=1\\ \scriptstyle i\#j}}^{ M-1 }} \text{ } \big[\boldsymbol{\textcolor{blue}{f_i}(X)}+\boldsymbol{\textcolor{blue}{f_j}(X)}\big] \geq 0
 \]</div>
 <h3 id="camada-3"><strong>Camada 3</strong></h3>
 <p style="font-size: 17px;">Junção do conjunto de restrições <span style="color: darkred;"><strong><i>g<sub>j</sub> (X)</i></strong></span> aplicados a[:,0:M-1] e <span style="color: darkred;"><strong><i>g<sub>M</sub> (X)</i></strong></span> aplicados a [:,M-1:M]</p>
 <div class="arithmatex">\[
-\underbrace{\large\boldsymbol{\textcolor{darkred}{g_j}(X)\big[\boldsymbol{\textcolor{blue}{f_{1}}(X)} , \boldsymbol{\textcolor{blue}{f_{M-1}}(X)}\big] \text{ , } } \boldsymbol{\textcolor{darkred}{g_M}(X)\big[\boldsymbol{\textcolor{blue}{f_{M}}(X)}\big]}}_{\large\boldsymbol{\big[ \boldsymbol{\textcolor{darkred}{g_j}(X):\boldsymbol{\textcolor{darkred}{g_M}(X)}} \big]\geq 0}}
+\underbrace{\large\boldsymbol{\textcolor{darkred}{g_j}(X)\big[\boldsymbol{\textcolor{blue}{f_{1}}(X)} \boldsymbol{\text{ ... }} \boldsymbol{\textcolor{blue}{f_{M-1}}(X)}\big] \text{ , } } \boldsymbol{\textcolor{darkred}{g_M}(X)\big[\boldsymbol{\textcolor{blue}{f_{M}}(X)}\big]}}_{\large\boldsymbol{\big[ \boldsymbol{\textcolor{darkred}{g_j}(X):\boldsymbol{\textcolor{darkred}{g_M}(X)}} \big]\geq 0}} "
 \]</div>
 <h2 id="metodos">Métodos</h2>
 <p>dtlz8.<a href="../inPOF/">POFsamples()</a></p>
