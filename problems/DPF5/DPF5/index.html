@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#metodos" class="md-skip">
+        <a href="#dpf5" class="md-skip">
           Skip to content
         </a>
       
@@ -382,6 +382,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -390,11 +392,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#definicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definição
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#metodos" class="md-nav__link">
     <span class="md-ellipsis">
       Métodos
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -414,11 +431,10 @@
 
 
 
-  <h1>DPF5</h1>
+<h1 id="dpf5"><strong>DPF5</strong></h1>
+<h2 id="definicao"><strong>Definição</strong></h2>
+<p style="font-size: 17px;">O problema DPF5 possui uma frente ótima de Pareto formada por:</p>
 
-<h3 id="metodos">Métodos</h3>
-<p>dpf5.<a href="../inPOF/">POFsamples()</a></p>
-<p>dpf5.<a href="../outPOF/">samples()</a></p>
 <div class="arithmatex">\[
 \boldsymbol{\textcolor{blue}{f_1^2}(X)} + \boldsymbol{\textcolor{blue}{f_2^2}(X)} +  \underbrace{\boldsymbol{\textcolor{blue}{f_3^2}(X)} + \boldsymbol{....}}_{\text{M &gt; 3} } + \boldsymbol{\textcolor{blue}{f_M^2}(X) = 1} \Longrightarrow \boldsymbol{\sum_{m=1}^M\textcolor{blue}{f_{M}^2} = 1}
 \]</div>
@@ -461,6 +477,9 @@
 <div class="arithmatex">\[
 \large \boldsymbol{\textcolor{darkred}{g(X^{\large r}) = (x_m-x_i)^2 + \boldsymbol{\displaystyle\sum^{\boldsymbol{n}}_{\boldsymbol{i = m + 1}}} \boldsymbol{(x_i-0.5)^2}}};
 \]</div>
+<h3 id="metodos">Métodos</h3>
+<p>dpf5.<a href="../inPOF/">POFsamples()</a></p>
+<p>dpf5.<a href="../outPOF/">samples()</a></p>
 <div style = "text-align: right; margin-top: 2em;">
 <button onclick="window.history.back()" style ="font-size:22px;">←</button>
 </div>
