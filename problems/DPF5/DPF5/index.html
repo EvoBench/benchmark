@@ -523,7 +523,7 @@
 <p style="font-size: 17px;">O valor de <strong><i>N</i></strong> pode ser obtido pela equação <strong><i>N = D+K-1</i></strong>.</p>
 
 <h2 id="caracteristicas"><strong>Caracteristicas</strong></h2>
-<p style="font-size: 17px;">Problemas de Benchmark de teste para otimização objeto, possuem normalmente uma frente de pareto definida por M-1 com todos seus objetivos conflitantes entre si, ou seja independentes um dos outros. Em muitos problemas do mundo real, problemas com redundância de obetivos, possuem uma frente ótima de Pareto menor que M-1 objetivos, tornando-se uma POF degenerada</p>
+<p style="font-size: 17px;">Problemas de Benchmark de teste para otimização multiobjeto, possuem normalmente uma frente de pareto definida por M-1 com todos seus objetivos conflitantes entre si, ou seja independentes um dos outros. Em muitos problemas do mundo real, problemas com redundância de obetivos, possuem uma frente ótima de Pareto menor que M-1 objetivos, tornando-se uma POF degenerada</p>
 
 <h2 id="redundancia-parcial"><strong>Redundância Parcial</strong></h2>
 <p style="font-size: 17px;">O Problema DPF5 tem por característica a definição de objetivos essenciais D, com um segmento D-1 que pode ter objetivos redundantes ou conflitantes, em função do valor assumido pela variável de decisão X1, tornando o problema parcialmente redundante</p>
@@ -614,6 +614,11 @@
 <div class="arithmatex">\[
 { \underbrace{x1}_{\large \boldsymbol{m-2}} , \underbrace{x2}_{\underbrace{ \large \boldsymbol{m-1}}_{ \Large \boldsymbol{d-2}}  } , \underbrace{x3}_{\underbrace{ \large \boldsymbol{M}}_{ \Large \boldsymbol{d-1}}} ,  \underbrace{\underbrace{ \underbrace{x4}_{\underbrace{\underbrace{\large \boldsymbol{m+1}}_{\Large \boldsymbol{d}} }_{{ \Large \boldsymbol{X_m}}}} , x5  ,x6  , x7 , x8  ,x9 , x10 , x11 , x12 , \underbrace{x13}_{\large \boldsymbol{X_n}}}_{\large \boldsymbol{X^{\huge r}}}}_{\textcolor{darkred}{\Large \boldsymbol{g(X^{\huge r})}}}}
 \]</div>
+<p style="font-size: 17px;">A posição <strong><i>X<sub>M</sub></i></strong> e <strong><i>X<sub>M+1</sub></i></strong> é representada por <strong><i>x<sub>3</sub></i></strong> e <strong><i>x<sub>4</sub></i></strong> respectivamente. O tamanho do vetor <strong><i>| X<sup>r</sup> |</i></strong> é definido pelo valor de <strong><i>K</i></strong> = 10, e corresponde ao intervalo de <strong><i>x<sub>4</sub></i></strong> até <strong><i>X<sub>n</sub></i></strong> váriaveis denotado por <strong><i>x<sub>13</sub></i></strong>.</p>
+<p style="font-size: 17px;">A função <span style="color: darkred;"><strong><i>g( X<sup>r</sup> )</i></strong></span> que corresponde as variáveis de decisão dentro do intervalo de <strong><i>| X<sup>r</sup> |</i></strong> ( <strong><i>x<sub>4</sub>  x<sub>5</sub>  x<sub>6</sub>  x<sub>7</sub> x<sub>8</sub>  x<sub>9</sub>  x<sub>10</sub>  x<sub>11</sub>  x<sub>12</sub>  x<sub>13</sub></i></strong> ), deve ser <i>minimizada</i> pelos algoritimos evolutivos (<strong><i>MOEAs</i></strong>). Quando o valor desta função atinge <span style="color: darkred;"><strong><i>g = 0</i></strong></span>, pode-se econtrar a  frente ótima de Pareto do problema em paralelo a habilidade dos <strong><i>MOEAs</i></strong> em ignorar os objetivos redundantes da POF do problema, que é degenerada. A definição da forma da POF é menor que o segmento M-1</p>
+
+<p style="font-size: 17px;">O objetivo da função <span style="color: darkred;"><strong><i>g( X<sup>r</sup> )</i></strong></span> é <strong><i>maximizar a distancia</i></strong> da POF do problema, atraindo os algorítimos evolutivos a POF locais. Além disso o problema pode conter varios objetivos redundantes, que tormam a POF do problema degenerada</p>
+<p style="font-size: 17px;">Quando o vetor <strong><i>| X<sub>M</sub> |</i></strong> atinge os valores de <strong><i>| 0.5  0.5 .... 0.5 |</i></strong> a POF pode ser encontrada, desde que <strong><i>MOEAs</i></strong> vençam a redundância de objetivos da POF .</p>
 <div class="arithmatex">\[
 \boldsymbol{\textcolor{darkred}{g(X^{\large r}) = (x_m-x_i)^2 + \boldsymbol{\displaystyle\sum^{\boldsymbol{n}}_{\boldsymbol{i = m + 1}}} \boldsymbol{(x_i-0.5)^2}}};
 \]</div>
