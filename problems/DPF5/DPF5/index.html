@@ -407,6 +407,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Disposição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -453,7 +468,7 @@
 <ul style="font-size:17px;">
  <li><strong><i> 1 < D < M < 4:</i></strong>
  <ul>
-  <li>Segmento <strong><i>m - d</i></strong>
+  <li><strong><i>m - d</i></strong>
   <ul>
   <li>
    <span style="color: blue;"><strong><i>f<sub>1</sub> (x)</i></strong></span>
@@ -463,7 +478,7 @@
 
 
   </li> 
-  <li>Segmento <strong><i>m - d + 1</i></strong>
+  <li><strong><i>m - d + 1</i></strong>
   <ul>
   <li>
   <span style="color: blue;"><strong><i>f<sub>m-d+1</sub> (x)</i></strong></span>
@@ -481,7 +496,7 @@
   <ul>
 
 
-  <li>Condição <strong><i>m - d</i></strong>
+  <li><strong><i>m - d</i></strong>
   <ul>
   <li>
     <span style="color: blue;"><strong><i>f<sub>1</sub> (x)</i></strong></span>
@@ -496,7 +511,7 @@
   </li> 
 
 
-  <li>Condição <strong><i>m - d + 1</i></strong>
+  <li><strong><i>m - d + 1</i></strong>
   <ul>
   <li><strong><i>2 < D < 4</i>
   <ul>
@@ -506,10 +521,10 @@
   </ul>
   </li>
 
-<li><strong><i>3 < D</i>
+<li><strong><i>3 < D < n</i>
   <ul>
    <li><span style="color: blue;"><strong><i>f<sub>m-d+1</sub> (x)</i></strong></span></li>
-   <li><span style="color: green;"><strong><i>f<sub>m-d+2</sub> (x) ....</i></strong></span></li>
+   <li><span style="color: green;"><strong><i>f<sub>m-d+2</sub> (x)</i></strong></span></li>
    <li><span style="color: green;"><strong><i>f<sub>m-1</sub> (x)</i></strong></span></li>
    <li><span style="color: blue;"><strong><i>f<sub>m</sub> (x)</i></strong></span></li>
   </ul>
@@ -528,73 +543,50 @@
 
 
 
+  </li>
 
+  </ul>
 
-
- <p style="font-size: 17px;"><strong><i>1 < D < M < 4:</i></strong></p>
-<ul style="font-size:17px;">
-  <li><strong><i> M - D</i></strong>: Define o segmento <strong><i> f<sub>1</sub></i></strong> </li>
-  <li><strong><i> M - D + 1</i></strong>: Define o segmento <strong><i> f ∈ { f<sub>m-d+1</sub>, f<sub>m</sub> } </i></strong> </li>
- </ul>
-
-$$
+</ul>
+<div class="arithmatex">\[
 {\large \underbrace{x1}_{\Large \boldsymbol{m-2}} , \underbrace{x2}_{\underbrace{ \Large \boldsymbol{m-1}}_{ \huge \boldsymbol{d-2}}  } , \underbrace{x3}_{\underbrace{ \Large \boldsymbol{M}}_{ \huge \boldsymbol{d-1}}} ,  \underbrace{\underbrace{ \underbrace{x4}_{\underbrace{\underbrace{\Large \boldsymbol{m+1}}_{\huge \boldsymbol{d}} }_{{ \huge \boldsymbol{X_m}}}} , x5  ,x6  , x7 , x8  ,x9 , x10 , x11 , x12 , \underbrace{x13}_{\Large \boldsymbol{X_n}}}_{\Large \boldsymbol{X^{\huge r}}}}_{\textcolor{darkred}{\huge \boldsymbol{g(X^{\huge r})}}}}
-$$
-
-$$
-\large   \begin{array}{l} \textcolor{black}{\boldsymbol{x_1 > \frac{1}{3}}}   \color{black}{\left\{ \begin{array}{l} \textcolor{blue}{ \boldsymbol{m-1}}&  \color{blue}{ \left\{  \begin{array}{l} \color{red}{ \left. \begin{array}{l}  \textcolor{red}{\boldsymbol{f_{1}(x) = \gamma_1(x)}} \; \; \; \; \; \; \; \;\\  \textcolor{red}{\boldsymbol{f_{2}(x) = \gamma_2}(x)} \\ \textcolor{red}{\boldsymbol{f_{3}(x) = \gamma_2(x)}}  \end{array}\right\{  }   \left. \begin{array}{l}  \textcolor{red}{\boldsymbol{f_1 = f_{m-d+1}}}  \\ \textcolor{red}{\boldsymbol{f_2 = f_3}} \\ \textcolor{red}{\boldsymbol{f_3 = f_{m-d+2}}} \end{array} \right\{  \begin{array}{l} \textcolor{red}{\boldsymbol{d-1}} \end{array}  \\  \left. \begin{array}{l} \textcolor{blue}{\boldsymbol{f_{m-d+1}(x) = \gamma_1(x)}} \\ \textcolor{blue}{\boldsymbol{f_{m-d+2}(x) = \gamma_2(x)}} \\  \textcolor{blue}{\boldsymbol{f_{d-1}(x) = \gamma_{d-1}(x)}} \end{array} \right\{  \begin{array}{l} \textcolor{blue}{\boldsymbol{f_{m-d+1}} \boldsymbol{\neq f_{m-d+2}}} \\ \textcolor{blue}{\boldsymbol{f_{m-d+2}} \boldsymbol{ \neq f_{d-1}}} \end{array}       \end{array}           \right.} \\ \textcolor{blue}{\textbf{m}}&  \color{blue}{\;\left\{\begin{array}{l}\textcolor{blue}{\boldsymbol{f_{d}(x) = \gamma_{d}(x)}} \end{array} \right. }  \end{array}  \right.}   \end{array} 
-$$
-
-$$
-\large   \begin{array}{l} \textcolor{black}{\boldsymbol{x_1 < \frac{1}{3}}}  \color{black}{\left\{ \begin{array}{l} \textcolor{blue}{ \boldsymbol{m-1}}&  \color{blue}{ \left\{  \begin{array}{l} \color{red}{ \left. \begin{array}{l}  \textcolor{red}{\boldsymbol{f_{1}(x) = \beta_1(x)}} \; \; \; \; \; \; \; \; \\  \textcolor{red}{\boldsymbol{f_{2}(x) = \beta_2(x)}} \\ \textcolor{red}{\boldsymbol{f_{3}(x) = \beta_2(x)}}  \end{array}\right\{  }  \left. \begin{array}{l}  \textcolor{red}{\boldsymbol{f_2 = f_3}}    \end{array}  \right\{  \begin{array}{l} \textcolor{red}{\boldsymbol{d-1}} \end{array}  \\  \left. \begin{array}{l} \textcolor{blue}{\boldsymbol{f_{m-d+1} = \beta_{m-d+1}}} \\ \textcolor{blue}{\boldsymbol{f_{m-d+2}(x) = \gamma_2(x)}} \\  \textcolor{blue}{\boldsymbol{f_{d-1}(x) = \gamma_{d-1}(x)}} \end{array} \right\{     \begin{array}{l} \textcolor{blue}{\boldsymbol{f_{m-d+1}} \boldsymbol{\neq f_{m-d+2}}} \\ \textcolor{blue}{\boldsymbol{f_{m-d+2}} \boldsymbol{\neq f_{d-1}}} \end{array}       \end{array}           \right.} \\ \textcolor{blue}{\textbf{m}}&   \color{blue}{\;\left\{\begin{array}{l}  \textcolor{blue}{\boldsymbol{f_{d}(x) = \gamma_{d}(x)}} \end{array} \right. }  \end{array}  \right.}   \end{array}
-$$
-
-
-
-$$
+\]</div>
+<div class="arithmatex">\[
+\large   \begin{array}{l} \textcolor{black}{\boldsymbol{x_1 &gt; \frac{1}{3}}}   \color{black}{\left\{ \begin{array}{l} \textcolor{blue}{ \boldsymbol{m-1}}&amp;  \color{blue}{ \left\{  \begin{array}{l} \color{red}{ \left. \begin{array}{l}  \textcolor{red}{\boldsymbol{f_{1}(x) = \gamma_1(x)}} \; \; \; \; \; \; \; \;\\  \textcolor{red}{\boldsymbol{f_{2}(x) = \gamma_2}(x)} \\ \textcolor{red}{\boldsymbol{f_{3}(x) = \gamma_2(x)}}  \end{array}\right\{  }   \left. \begin{array}{l}  \textcolor{red}{\boldsymbol{f_1 = f_{m-d+1}}}  \\ \textcolor{red}{\boldsymbol{f_2 = f_3}} \\ \textcolor{red}{\boldsymbol{f_3 = f_{m-d+2}}} \end{array} \right\{  \begin{array}{l} \textcolor{red}{\boldsymbol{d-1}} \end{array}  \\  \left. \begin{array}{l} \textcolor{blue}{\boldsymbol{f_{m-d+1}(x) = \gamma_1(x)}} \\ \textcolor{blue}{\boldsymbol{f_{m-d+2}(x) = \gamma_2(x)}} \\  \textcolor{blue}{\boldsymbol{f_{d-1}(x) = \gamma_{d-1}(x)}} \end{array} \right\{  \begin{array}{l} \textcolor{blue}{\boldsymbol{f_{m-d+1}} \boldsymbol{\neq f_{m-d+2}}} \\ \textcolor{blue}{\boldsymbol{f_{m-d+2}} \boldsymbol{ \neq f_{d-1}}} \end{array}       \end{array}           \right.} \\ \textcolor{blue}{\textbf{m}}&amp;  \color{blue}{\;\left\{\begin{array}{l}\textcolor{blue}{\boldsymbol{f_{d}(x) = \gamma_{d}(x)}} \end{array} \right. }  \end{array}  \right.}   \end{array} 
+\]</div>
+<div class="arithmatex">\[
+\large   \begin{array}{l} \textcolor{black}{\boldsymbol{x_1 &lt; \frac{1}{3}}}  \color{black}{\left\{ \begin{array}{l} \textcolor{blue}{ \boldsymbol{m-1}}&amp;  \color{blue}{ \left\{  \begin{array}{l} \color{red}{ \left. \begin{array}{l}  \textcolor{red}{\boldsymbol{f_{1}(x) = \beta_1(x)}} \; \; \; \; \; \; \; \; \\  \textcolor{red}{\boldsymbol{f_{2}(x) = \beta_2(x)}} \\ \textcolor{red}{\boldsymbol{f_{3}(x) = \beta_2(x)}}  \end{array}\right\{  }  \left. \begin{array}{l}  \textcolor{red}{\boldsymbol{f_2 = f_3}}    \end{array}  \right\{  \begin{array}{l} \textcolor{red}{\boldsymbol{d-1}} \end{array}  \\  \left. \begin{array}{l} \textcolor{blue}{\boldsymbol{f_{m-d+1} = \beta_{m-d+1}}} \\ \textcolor{blue}{\boldsymbol{f_{m-d+2}(x) = \gamma_2(x)}} \\  \textcolor{blue}{\boldsymbol{f_{d-1}(x) = \gamma_{d-1}(x)}} \end{array} \right\{     \begin{array}{l} \textcolor{blue}{\boldsymbol{f_{m-d+1}} \boldsymbol{\neq f_{m-d+2}}} \\ \textcolor{blue}{\boldsymbol{f_{m-d+2}} \boldsymbol{\neq f_{d-1}}} \end{array}       \end{array}           \right.} \\ \textcolor{blue}{\textbf{m}}&amp;   \color{blue}{\;\left\{\begin{array}{l}  \textcolor{blue}{\boldsymbol{f_{d}(x) = \gamma_{d}(x)}} \end{array} \right. }  \end{array}  \right.}   \end{array}
+\]</div>
+<div class="arithmatex">\[
 \large \beta_1(X) = \cos(\theta_1). . . \cos(\theta_{m-2})\cos(\theta_{m-1})(1+\boldsymbol{\textcolor{darkred}{g(X^{\large r})}});
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \large \beta_2(X) = \cos(\theta_1). . . \cos(\theta_{m-2})\sin(\theta_{m-1})(1+\boldsymbol{\textcolor{darkred}{g(X^{\large r})}});
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \large \beta_{m-d+1}(X) = \cos(\theta_1). . . \cos(\theta_{d-1})\sin(\theta_{d})(1+\boldsymbol{\textcolor{darkred}{g(X^{\large r})}});
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \large \gamma_1(X) = \sqrt{\frac{1}{m-d+1}} \cos(\theta_1). . . \cos(\theta_{d-1})(1+\boldsymbol{\textcolor{darkred}{g(X^{\large r})}});
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \large \gamma_2(X) =  \cos(\theta_1). . . \cos(\theta_{d-2}) \sin(\theta_{d-1})(1+\boldsymbol{\textcolor{darkred}{g(X^{\large r})}});
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \large \gamma_{d-1}(X) =  \cos(\theta_1)\sin(\theta_2) (1+\boldsymbol{\textcolor{darkred}{g(X^{\large r})}});
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \large \gamma_d(X) =  \sin(\theta_1) (1+\boldsymbol{\textcolor{darkred}{g(X^{\large r})}});
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \large \theta_j = \frac{\pi}{2} x_j \;\;onde\;\; j \in \{1...,m-1\},
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \large \boldsymbol{\textcolor{darkred}{g(X^{\large r}) = (x_m-x_i)^2 + \boldsymbol{\displaystyle\sum^{\boldsymbol{n}}_{\boldsymbol{i = m + 1}}} \boldsymbol{(x_i-0.5)^2}}};
-$$
-
-
-### Métodos
-
-
-dpf5.[POFsamples()](inPOF.md)
-
-dpf5.[samples()](outPOF.md)
-
+\]</div>
+<h3 id="metodos">Métodos</h3>
+<p>dpf5.<a href="../inPOF/">POFsamples()</a></p>
+<p>dpf5.<a href="../outPOF/">samples()</a></p>
 <div style = "text-align: right; margin-top: 2em;">
 <button onclick="window.history.back()" style ="font-size:22px;">←</button>
 </div>
