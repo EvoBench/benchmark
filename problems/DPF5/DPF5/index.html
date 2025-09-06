@@ -664,62 +664,6 @@
 <div class="arithmatex">\[
 \begin{array}{l}  \boldsymbol{\textcolor{blue}{f_{m-d+1}}} = \left\{ \begin{array}{l} \boldsymbol{x_1 &gt; \frac{1}{3} \rightarrow \textcolor{blue}{\gamma_1}} \\ ou \\ \boldsymbol{x_1 &lt; \frac{1}{3} \rightarrow \textcolor{blue}{\beta_{m-d+1}}} \end{array}\right.{\large\boldsymbol{,}}&amp;    \boldsymbol{\textcolor{darkgreen}{f_{m-d+2}}} \begin{array}{l} = \boldsymbol{\textcolor{darkgreen}{\gamma_2}}              \end{array}&amp;  \boldsymbol{\textcolor{darkgreen}{\begin{array}{l}\textbf{..}\end{array}}}{\large\boldsymbol{,}}&amp; \boldsymbol{\textcolor{darkgreen}{f_{m-1}}} \begin{array}{l} = \boldsymbol{\textcolor{darkgreen}{\gamma_{d-1}}}\end{array}{\large\boldsymbol{,}}&amp;                           \boldsymbol{\textcolor{blue}{f_{m}}} \begin{array}{l} = \boldsymbol{\textcolor{blue}{\gamma_d}}              \end{array}              \end{array}
 \]</div>
-<p style="font-size: 17px;">As funções objetivo obedecem a disposição mínima de <strong><i> M > D > 1: </i></strong></p>
-
-<ul style="font-size:17px;">
- <li>Condição <strong><i> 1 < D < M < 4:</i></strong>
- <ul>
-  <li>Segmento <strong><i>m - d</i></strong>
-  <ul>
-   <li><span style="color: blue;"><strong><i>f<sub>1</sub> (X)</i></strong></span><strong><i> = &gamma;<sub>1</sub>(X)  se X<sub>1</sub> > 1/3 ou &beta;<sub>1</sub>(X) se X<sub>1</sub> < 1/3 </i></strong></li>
-  </ul>  
-  </li> 
-  <li>Segmento <strong><i>m - d + 1</i></strong>
-  <ul>
-  <li><span style="color: blue;"><strong><i>f<sub>m-d+1</sub> (X)</i></strong></span><strong><i> = &gamma;<sub>1</sub>(X)  se X<sub>1</sub> > 1/3 ou &beta;<sub>m-d+1</sub>(X) se X<sub>1</sub> < 1/3 </i></strong></li>
-   <li><span style="color: blue;"><strong><i>f<sub>m</sub> (X)</i></strong></span> = <strong><i>&gamma;<sub>m</sub>(X)</i></strong>
-  </ul>
-  </li> 
- </ul>
-
-
- </li>
-  <li>Condição <strong><i> M > D > n > 2</i></strong>
-  <ul>
-  <li>Segmento <strong><i>m - d</i></strong>
-  <ul>
-  <li>Condição <strong><i> M > D  > 2</i></strong>
-  <ul>
-   <li><span style="color: blue;"><strong><i>f<sub>1</sub> (X)</i></strong></span><strong><i> = &gamma;<sub>1</sub>(X)  se X<sub>1</sub> > 1/3 ou &beta;<sub>1</sub>(X) se X<sub>1</sub> < 1/3 </i></strong></li>
-  <li><span style="color: green;"><strong><i>f<sub>2</sub> (X)</i></strong></span><strong><i> = &gamma;<sub>2</sub>(X)  se X<sub>1</sub> > 1/3 ou &beta;<sub>2</sub>(X) se X<sub>1</sub> < 1/3 </i></strong></li>
-  <li><span style="color: green;"><strong><i>f<sub>m-d</sub> (X)</i></strong></span><strong><i> = &gamma;<sub>2</sub>(X)  se X<sub>1</sub> > 1/3 ou &beta;<sub>2</sub>(X) se X<sub>1</sub> < 1/3 </i></strong></li>
-  </ul>
-  </li> 
-    </ul>
-  </li>   
-  <li>Segmento <strong><i>m - d + 1</i></strong>
-  <ul>
-  <li>Condição <strong><i>D = 3</i></strong>
-  <ul>
-   <li><span style="color: blue;"><strong><i>f<sub>m-d+1</sub> (X)</i></strong></span><strong><i> = &gamma;<sub>1</sub>(X)  se X<sub>1</sub> > 1/3 ou &beta;<sub>m-d+1</sub>(X) se X<sub>1</sub> < 1/3 </i></strong></li>
-   <li><span style="color: green;"><strong><i>f<sub>m-1</sub> (X)</i></strong></span> = <strong><i>&gamma;<sub>d-1</sub>(X)</i></strong>
-   <li><span style="color: blue;"><strong><i>f<sub>m</sub> (X)</i></strong></span> = <strong><i>&gamma;<sub>m</sub>(X)</i></strong>
-  </ul>
-  </li>
-<li>Condição <strong><i>D > 3</i></strong>
-  <ul>
-   <li><span style="color: blue;"><strong><i>f<sub>m-d+1</sub> (X)</i></strong></span><strong><i> = &gamma;<sub>1</sub>(X)  se X<sub>1</sub> > 1/3 ou &beta;<sub>m-d+1</sub>(X) se X<sub>1</sub> < 1/3 </i></strong></li>
-   <li><span style="color: green;"><strong><i>f<sub>m-d+2</sub> (X)</i></strong></span> = <strong><i>&gamma;<sub>2</sub>(X)</i></strong>
-   <li><span style="color: green;"><strong><i>f<sub>m-1</sub> (X)</i></strong></span> = <strong><i>&gamma;<sub>d-1</sub>(X)</i></strong>
-   <li><span style="color: blue;"><strong><i>f<sub>m</sub> (X)</i></strong></span> = <strong><i>&gamma;<sub>m</sub>(X)</i></strong>
-  </ul>
-  </li>
-
-  </ul>
-  </li>
-  </li> 
-  </ul>
-
 <h2 id="exemplo"><strong>Exemplo</strong></h2>
 <p style="font-size: 17px;">No exemplo a seguir temos duas situações de POF degenerada (POF < M-1), quanto menor o numero de objetivos conflitantes e maior a redundância, mais difícil para encontrar a frente ótima de pareto, pois algoritimos evolutivos (MOEAs) podem perder sua eficiência, para ignorar os objetivos redundantes e bucar por objetivos essenciais </p>
 
