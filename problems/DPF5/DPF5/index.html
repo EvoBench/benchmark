@@ -401,24 +401,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#caracteristicas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Caracteristicas
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#redundancia-parcial" class="md-nav__link">
-    <span class="md-ellipsis">
-      Redundância Parcial
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#disposicao" class="md-nav__link">
     <span class="md-ellipsis">
       Disposição
@@ -637,7 +619,7 @@
 <p style="font-size: 17px;">O problema DPF5 possui uma frente ótima de Pareto formada por:</p>
 
 <div class="arithmatex">\[
-\boldsymbol{\textcolor{blue}{f_1^2}(X)} + \boldsymbol{\textcolor{blue}{f_2^2}(X)} +  \underbrace{\boldsymbol{\textcolor{blue}{f_3^2}(X)} + \boldsymbol{....}}_{\text{M &gt; 3} } + \boldsymbol{\textcolor{blue}{f_M^2}(X) = 1} \Longrightarrow \boldsymbol{\sum_{m=1}^M\textcolor{blue}{f_{M}^2} = 1}
+\boldsymbol{\textcolor{blue}{f_1^2}(X)} + \boldsymbol{\textcolor{blue}{f_2^2}(X)} +  \underbrace{\boldsymbol{\textcolor{blue}{f_3^2}(X)} + \boldsymbol{....}}_{\text{M &gt; 3} } + \boldsymbol{\textcolor{blue}{f_M^2}(X) = 1} \Longrightarrow \boldsymbol{\sum_{m=1}^M\textcolor{blue}{f_{m}^2} = 1}
 \]</div>
 <p style="font-size: 17px;">DPF5 é definida pelas seguintes variáveis:</p>
 <ul style="font-size:17px;">
@@ -651,23 +633,17 @@
 \]</div>
 <p style="font-size: 17px;">O valor de <strong><i>N</i></strong> pode ser obtido pela equação <strong><i>N = D+K-1</i></strong>.</p>
 
-<h2 id="caracteristicas"><strong>Caracteristicas</strong></h2>
-<p style="font-size: 17px;">Problemas de Benchmark de teste para otimização multiobjeto, possuem normalmente uma frente de pareto definida por M-1 com todos seus objetivos conflitantes entre si, ou seja independentes um dos outros. Em muitos problemas do mundo real, problemas com redundância de obetivos, possuem uma frente ótima de Pareto menor que M-1 objetivos, tornando-se uma POF degenerada</p>
-
-<h2 id="redundancia-parcial"><strong>Redundância Parcial</strong></h2>
-<p style="font-size: 17px;">O Problema DPF5 tem por característica a definição de objetivos essenciais D, com um segmento D-1 que pode ter objetivos redundantes ou conflitantes, em função do valor assumido pela variável de decisão X1, tornando o problema parcialmente redundante</p>
-
 <h2 id="disposicao"><strong>Disposição</strong></h2>
 <p style="font-size: 17px;">O problema é dividido em 2 partes:</p>
 
 <ul style="font-size:17px;">
-  <li><strong><i>M-D</i></strong>: Onde estão localizados os objetivos redundantes, que podem variar de acordo com o tamanho de M e de D. Também pode sofrer alterações nos objetivos de acordo com o valor da variavel de decisão x1</li>
-  <li><strong><i>M-D+1</i></strong>: Onde estão localizados os objetivos essenciais do problema, mas com possível adição de objetivos redundantes no segmento D-1</li>
+  <li><strong><i>M-D</i></strong>: Onde estão localizados os objetivos redundantes, que podem variar de acordo com o tamanho de M e de D. Também pode sofrer alterações nos objetivos de acordo com o valor da variavel de decisão <strong><i>x<sub>1</sub></i></strong></li>
+  <li><strong><i>M-D+1</i></strong>: Onde estão localizados os objetivos essenciais do problema, que possui o tamanho de <strong><i>D</i></strong> objetivos.</li>
 </ul>
 
 <h3 id="m-d"><strong>m - d</strong></h3>
 <ul style="font-size:17px;">
-  <li><strong><i>M-D</i></strong>: Divisão para os objetivos redundantes, que cresce de acordo com o valor de M-D.</li>
+  <li><strong><i>M-D</i></strong>: Objetivos redundantes</li>
 </ul>
 
 <h4 id="combinacoes"><strong>Combinações</strong></h4>
@@ -685,7 +661,7 @@
 \]</div>
 <h3 id="m-d-1_1"><strong>m - d + 1</strong></h3>
 <ul style="font-size:17px;">
-  <li><strong><i>M-D</i></strong>: Divisão para os objetivos essenciais, mas que pode conter objetivos redundantes no segmento D-1 do problema</li>
+  <li><strong><i>M-D</i></strong>: Objetivos essenciais</li>
 </ul>
 
 <h4 id="combinacoes_1"><strong>Combinações</strong></h4>
@@ -706,9 +682,7 @@
 \begin{array}{l}  \boldsymbol{\textcolor{blue}{f_{m-d+1}}} = \left\{ \begin{array}{l} \boldsymbol{x_1 &gt; \frac{1}{3} \rightarrow \textcolor{blue}{\gamma_1}} \\ ou \\ \boldsymbol{x_1 &lt; \frac{1}{3} \rightarrow \textcolor{blue}{\beta_{m-d+1}}} \end{array}\right.{\large\boldsymbol{,}}&amp;    \boldsymbol{\textcolor{darkgreen}{f_{m-d+2}}} \begin{array}{l} = \boldsymbol{\textcolor{darkgreen}{\gamma_2}}              \end{array}&amp;  \boldsymbol{\textcolor{darkgreen}{\begin{array}{l}\textbf{..}\end{array}}}{\large\boldsymbol{,}}&amp; \boldsymbol{\textcolor{darkgreen}{f_{m-1}}} \begin{array}{l} = \boldsymbol{\textcolor{darkgreen}{\gamma_{d-1}}}\end{array}{\large\boldsymbol{,}}&amp;                           \boldsymbol{\textcolor{blue}{f_{m}}} \begin{array}{l} = \boldsymbol{\textcolor{blue}{\gamma_d}}              \end{array}              \end{array}
 \]</div>
 <h2 id="redundancia"><strong>Redundância</strong></h2>
-<p style="font-size: 17px;">Uma frente de pareto degenerada é caracterizada pela adição de objetivos redundantes e objetivos essenciais (conflitantes), dentro do conjunto de objetivos de problema. Esta parte da redundância dentro da POF do problema, faz com que a mesma tenha uma dimensão menor que M-1. O problema DPF5, pode sofrer alterações na sua frente otima de Pareto de acordo com o número de objetivos essenciais D e com o número de objetivos do problema M.</p>
-
-<p style="font-size: 17px;">Para este exempl, adotou-se a seguinte configuração</p>
+<p style="font-size: 17px;">Problemas de Benchmark de teste para otimização multiobjeto, possuem normalmente uma frente de pareto definida por M-1 dimensões, com todos seus objetivos conflitantes entre si, ou seja independentes um dos outros. A presença de objetivos redundantes, torna a dimensão da frente ótima de Pareto  degenerada, ou seja menor que M-1.</p>
 
 <ul style="font-size:17px;">
   <li><strong><i>M = 10: </i></strong>objetivos do problema</li>
@@ -717,15 +691,15 @@
 </ul>
 
 <h3 id="x1-13"><strong>X<sub>1</sub> &gt; 1/3</strong></h3>
-<p style="font-size: 17px;">O número de objetivos redundantes pode aumentar exponencialmente de acordo com o valor de M-D e com a variável de decisão X1 > 1/3:</p>
+<p style="font-size: 17px;">O número de objetivos redundantes pode aumentar exponencialmente de acordo com o valor de <strong><i>M-D</i></strong> e com a variável de decisão <strong><i>X<sub>1</sub>>&frac13 </i></strong></p>
 
 <div class="arithmatex">\[
 \boldsymbol{\underbrace{\underbrace{\textcolor{red}{\;\underbrace{\overbrace{\gamma_1}^{f_1}}_{\textbf{redundante}}\;\;\underbrace{\overbrace{\gamma_2}^{f_2}\;\;\overbrace{\gamma_2}^{f_3}\;\;\overbrace{\gamma_2}^{f_4}\;\;\overbrace{\gamma_2}^{f_5}}_{\textbf{redundante}}}}_{\overline{m-d}}\;\;\underbrace{\;\textcolor{blue}{\underbrace{\textcolor{blue}{\overbrace{\gamma_1}^{f_6}}\;\;\textcolor{blue}{\overbrace{\gamma_2}^{f_7}}}_{\textbf{conflitante}}}\;\;\textcolor{red}{\underbrace{\overbrace{\gamma_2}^{f_8}}_{\textbf{redundante}}}\;\;\textcolor{blue}{    \underbrace{ \overbrace{\gamma_{d-1}}^{f_9}}_{\textbf{conflitante}\;}}}_{\overline{d-1}}}   _{\overline{m-1}}\;\;\underbrace{\underbrace{\textcolor{blue}{\underbrace{\overbrace{\gamma_d}^{f_{10}}}_{\;\textbf{conflitante}}\;}}_{\overline{d}}}_{\overline{m}}}
 \]</div>
-<p style="font-size: 17px;">Acima na divisão M-D, existem dois segmentos em vermelho (y1, y2)  que estão redundantes dentro do problema, totalizando 5 objetivos. Na divisão M-D+1, dentro do segmento D-1 onde estão localizados os objetivos essenciais, também acaba recebendo mais um objetivo redundante y2, em função do valor de D > 4</p>
+<p style="font-size: 17px;">Acima, na divisão <strong><i>m - d</i></strong>, existem dois segmentos em vermelho  <span style="color: darkred;"><strong><i>(&gamma<sub>1, </sub>&gamma<sub>2</sub>)</i></strong></span>  que estão redundantes dentro do problema, totalizando <strong><i>5 objetivos</i></strong>. Na divisão <strong><i>M-D+1</i></strong>, dentro do segmento <strong><i>d - 1</i></strong> estão localizados os objetivos essenciais. Neste segmento, também existe um objetivo redundante y2, em função do valor de <strong><i>d > 4. No segmento <strong><i>m - 1</i></strong> os segmentos <span style="blue: darkred;"><strong><i>(&gamma<sub>1, </sub>&gamma<sub>2</sub>, </sub>&gamma<sub>d-1</sub>)</i></strong></span>  segmentos </i></strong></p>
 
 <h3 id="x1-13_1"><strong>X<sub>1</sub> &lt; 1/3</strong></h3>
-<p style="font-size: 17px;">O número de objetivos redundantes pode aumentar exponencialmente de acordo com o valor de M-D, mas o número de objetivos redudantes pode ser menor em função variável de decisão X1 < 1/3 do que x1 > 1/3.</p>
+<p style="font-size: 17px;">O número de objetivos redundantes pode aumentar exponencialmente de acordo com o valor de M-D, mas o número de objetivos redudantes pode ser menor em função da variável de decisão X1 < 1/3.</p>
 
 <div class="arithmatex">\[
 \boldsymbol{\underbrace{\underbrace{\textcolor{blue}{\;\underbrace{\overbrace{\beta_1}^{f_1}\;\overbrace{\beta_2}^{f_2}}_{\textbf{conflitante}}      \;\;\textcolor{red}{\underbrace{\overbrace{\beta_2}^{f_3}\;\;\overbrace{\beta_2}^{f_4}\;\;\overbrace{\beta_2}^{f_5}}_{\textbf{redundante}}}}}_{\overline{m-d}}\;\;\underbrace{\;\textcolor{blue}{\underbrace{\textcolor{blue}{\overbrace{\beta_{m-d+1}}^{f_6}}\;\;\textcolor{blue}{\overbrace{\gamma_2}^{f_7}}}_{\textbf{conflitante}}}\;\;\textcolor{red}{\underbrace{\overbrace{\gamma_2}^{f_8}}_{\textbf{redundante}}}\;\;\textcolor{blue}{    \underbrace{ \overbrace{\gamma_{d-1}}^{f_9}}_{\textbf{conflitante}\;}}}_{\overline{d-1}}}   _{\overline{m-1}}\;\;\underbrace{\underbrace{\textcolor{blue}{\underbrace{\overbrace{\gamma_d}^{f_{10}}}_{\;\textbf{conflitante}\; }}}_{\overline{d}}}_{\overline{m}}}
