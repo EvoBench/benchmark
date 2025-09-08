@@ -454,14 +454,13 @@
 
 <h1 id="amostras-nao-dominadas"><strong>Amostras não dominadas</strong></h1>
 <h2 id="metodo"><strong>Método</strong></h2>
-<p style="font-size: 17px;">O método <strong><i>dtlz8.POFsamples()</i></strong> cria uma matriz gj(x)e gM(x) com o mesmo numero de pontos / soluções de M. Cada de g = M deve satisfazer g >=0, para que as soluções do conjunto de soluções das funções objetivo sejam válidas <strong><i>| X<sub>M</sub> |</i></strong> para os valores de  <strong><i> | 0.5  0.5 .... 0.5 |</i></strong> tornando o valor da função <span style="color: darkred;"><strong><i>g( X<sub>M</sub> )</i></strong></span> = 0. A finalidade é tornar visível a frente ótima de Pareto do problema.</p>
+<p style="font-size: 17px;">O método <strong><i>dtlz8.POFsamples()</i></strong> cria uma matriz <strong><i>[ gj(x)e gM(x) ]</i></strong> com o mesmo numero de pontos / soluções de <strong><i>M</i></strong>. Cada ponto da matriz <strong><i>M</i></strong> é validada de acordo com a solução equivalente de <strong><i>[ gj(x) , gM(x) ] >= 0 </i></strong>. A frente ótima de Pareto gerada é uma restrição aritimética para o problema, e não gera a POF de forma detalhada, mas fornece o conjunto de restrições necessários para os algoritimos evolutivos, buscar todos os conjuntos de soluções possíveis para o problema, através da evolução de geração, população e mutação.</p>
 
 <h2 id="configuracao"><strong>Configuração</strong></h2>
 <p style="font-size: 17px;">O método poasui a seguinte configuração <strong><i>padrão</i></strong>:</p>
 <ul style="font-size:17px;">
   <li><strong><i>M</i></strong>( objetivos do problema ) = 3</li>
   <li><strong><i>N</i></strong>( variáveis de decisão ) = 10</li>
-  <li><strong><i>K</i></strong>( valor para o tamanho do vetor <strong><i>| X<sub>M</sub> |</i></strong> ) = 8</li>
   <li><strong><i>P</i></strong>( númetos de pontos / soluções do problema ) = 700</li>
 </ul>
 <p style="font-size: 17px;">O método aceita qualquer configuração de valores para as variáveis do problema, incluindo qualquer número para <strong><i>M</i></strong>.</p>
