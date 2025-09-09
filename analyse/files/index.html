@@ -397,8 +397,7 @@
 <ul>
 <li><p style="font-size: 17px;"><strong><i>R:</i></strong> Nome do MOEA ou amostra gerada por Evobench</p></li>
 <ul>
-<li>
-<table style="font-size: 17px;">
+<table style="font-size: 16px;">
 <tr>
 <th>codigo</th>
 <th>tipo</th>
@@ -459,55 +458,163 @@
 <td>NSGA-2</td>
 <td>Algoritimo evolutivo (MOEA)</td>
 </tr>
-</ul>
-</li>
-</ul>
+
 </table>
-<li><p style="font-size: 17px;"><strong><i>B:</i></strong> Nome do Problema de Benchmark:</p>
-<ul>
-<li><p style="font-size: 17px;"><strong>10 → 'DTLZ1'   :</strong>Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>20 → 'DTLZ2'   :</strong>Implementação do problema de Benchmark</p></i>  
-<li><p style="font-size: 17px;"><strong>30 → 'DTLZ3'   :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>40 → 'DTLZ4'   :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>50 → 'DTLZ5'   :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>60 → 'DTLZ6'   :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>70 → 'DTLZ7'   :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>80 → 'DTLZ8'   :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>90 → 'DTLZ9'   :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>11 → 'DPF1'    :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>12 → 'DPF2'    :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>13 → 'DPF3'    :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>14 → 'DPF4'    :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>15 → 'DPF5'    :</strong> Implementação do problema de Benchmark</p></li>
-<li><p style="font-size: 17px;"><strong>'Personalizado':</strong> Implementação do problema de Benchmark</p></li>
-</ul>
-</li>
 
-</ul>
 <ul>
-<li>Método:  <br />
+<li><p style="font-size: 17px;"><strong><i>B:</i></strong> Nome do Problema de Benchmark:</p></li>
+<ul>
+
+<table style="font-size: 16px;">
+<tr>
+<th>codigo</th>
+<th>tipo</th>
+<th>descrição</th>
+</tr>
+
+<tr>
+<td>10</td>
+<td>DTLZ1F</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+
+<tr>
+<td>20</td>
+<td>DTLZ2</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+<tr>
+<td>30</td>
+<td>DTLZ3</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+<tr>
+<td>40</td>
+<td>DTLZ4</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+<tr>
+<td>50</td>
+<td>DTLZ5</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+<tr>
+<td>60</td>
+<td>DTLZ6</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+
+<tr>
+<td>70</td>
+<td>DTLZ7</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+
+<tr>
+<td>80/td>
+<td>DTLZ8</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+
+<tr>
+<td>90</td>
+<td>DTLZ9</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>DPF1</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>DPF2</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+
+<tr>
+<td>13</td>
+<td>DPF3</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+
+
+<tr>
+<td>14</td>
+<td>DPF4</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+
+<tr>
+<td>15</td>
+<td>DPF5</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+<tr>
+<td>**</td>
+<td>Personalizável</td>
+<td>Implementação do problema de Benchmark</td>
+</tr>
+
+</table>
+
+
+
+
+
+<ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Método:    
           analyse.LOADER() 
-        - Retorna uma instância de LOADER:   <br />
-          - Carrega um arquivo com nome padrão gerado por Evobench:<pre><code>        - G → Valor para geração
-        - P → Valor para população
-        - M → Valor objetivos
-        - K → Valor para K = [XM]
-        - D → Valor para objetivos essenciais
-        - N → Valor para variáveis de decisão
-        - t → Tempo de criação no formato "%m%M%S"
-- Exemplo:
-    R10_B15G300P100M3K5D2N6t083645.xlsx
+        - Retorna uma instância de LOADER:     
+          - Carrega um arquivo com nome padrão gerado por Evobench:
 
-- Exception:                
-    A ordem das siglas e os seus valores precisam ser obedecidos para gerar 
-    arquivo .XLSX no padrão do Evobench.
+                - G → Valor para geração
+                - P → Valor para população
+                - M → Valor objetivos
+                - K → Valor para K = [XM]
+                - D → Valor para objetivos essenciais
+                - N → Valor para variáveis de decisão
+                - t → Tempo de criação no formato "%m%M%S"
+        - Exemplo:
+            R10_B15G300P100M3K5D2N6t083645.xlsx
 
-- Notes:
-    Em LOADER, apenas os arquivos .XLSX com o mesmo padrão descrito serão 
-    exibidos.
-</code></pre>
-</li>
-</ul>
+        - Exception:                
+            A ordem das siglas e os seus valores precisam ser obedecidos para gerar 
+            arquivo .XLSX no padrão do Evobench.
+
+        - Notes:
+            Em LOADER, apenas os arquivos .XLSX com o mesmo padrão descrito serão 
+            exibidos.   
+
+
 <div style = "text-align: right; margin-top: 2em;">
 <button onclick="window.history.back()" style ="font-size:22px;">←</button>
 </div>
