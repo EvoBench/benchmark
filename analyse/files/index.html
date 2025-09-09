@@ -395,8 +395,8 @@
   <h1>Files</h1>
 
 <ul>
-<li><p style="font-size: 17px;"><strong><i>R:</i></strong> Nome do MOEA ou amostra gerada por Evobench</p></li>
-<ul>
+<li><p style="font-size: 17px;"><strong><i>R:</i></strong>  Nome do MOEA ou amostra gerada por Evobench</p></li>
+</ul>
 <table style="font-size: 16px;">
 <tr>
 <th>codigo</th>
@@ -462,8 +462,8 @@
 </table>
 
 <ul>
-<li><p style="font-size: 17px;"><strong><i>B:</i></strong> Nome do Problema de Benchmark:</p></li>
-<ul>
+<li><p style="font-size: 17px;"><strong><i>B:</i></strong>  Nome do Problema de Benchmark:</p></li>
+</ul>
 
 <table style="font-size: 16px;">
 <tr>
@@ -569,51 +569,120 @@
 <td>Personalizável</td>
 <td>Implementação do problema de Benchmark</td>
 </tr>
+</table>
+
+<ul>
+<li><p style="font-size: 17px;"><strong><i>R:</i></strong>Configuraçõpes:</p></li>
+</ul>
+
+<table style="font-size: 16px;">
+<tr>
+<th>codigo</th>
+<th>tipo</th>
+<th>descrição</th>
+</tr>
+<tr>
+<td>1</td>
+<td>IN POF</td>
+<td>Amostra de soluções não dominadas da POF</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>OUT POF</td>
+<td>Amostra de soluções dominadas da POF</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>NEAR POF</td>
+<td>Amostra de soluções próximas a POF</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>NSGA-3</td>
+<td>Algoritimo evolutivo (MOEA)</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>SPEA-2</td>
+<td>Algoritimo evolutivo (MOEA)</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>UNSGA-3</td>
+<td>Algoritimo evolutivo (MOEA)</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>MOEAD</td>
+<td>Algoritimo evolutivo (MOEA)</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td>RVEA</td>
+<td>Algoritimo evolutivo (MOEA)</td>
+</tr>
+
+
+
+<tr>
+<td>15</td>
+<td>NSGA-2</td>
+<td>Algoritimo evolutivo (MOEA)</td>
+</tr>
 
 </table>
 
+<table style="font-size: 16px;">
+<tr>
+<th>tipo</th>
+<th>descrição</th>
+</tr>
 
 
+<tr>
+<td>G</td>
+<td>Valor para geraçãoF</td>
+</tr>
 
 
-<ul>
+<tr>
+<td>P</td>
+<td>Valor para população</td>
+</tr>
 
+<tr>
+<td>M</td>
+<td>Valor objetivos</td>
+</tr>
 
+<tr>
+<td>K</td>
+<td>Valor para K = [XM]</td>
+</tr>
 
+<tr>
+<td>D</td>
+<td>Valor para objetivos essenciais</td>
+</tr>
 
+<tr>
+<td>N</td>
+<td>Valor para variáveis de decisão</td>
+</tr>
 
+<tr>
+<td>t</td>
+<td>Tempo de criação no formato "%m%M%S"</td>
+</tr>
 
-
-
-
-
-
-
-
-
-- Método:    
-          analyse.LOADER() 
-        - Retorna uma instância de LOADER:     
-          - Carrega um arquivo com nome padrão gerado por Evobench:
-
-                - G → Valor para geração
-                - P → Valor para população
-                - M → Valor objetivos
-                - K → Valor para K = [XM]
-                - D → Valor para objetivos essenciais
-                - N → Valor para variáveis de decisão
-                - t → Tempo de criação no formato "%m%M%S"
-        - Exemplo:
-            R10_B15G300P100M3K5D2N6t083645.xlsx
-
-        - Exception:                
-            A ordem das siglas e os seus valores precisam ser obedecidos para gerar 
-            arquivo .XLSX no padrão do Evobench.
-
-        - Notes:
-            Em LOADER, apenas os arquivos .XLSX com o mesmo padrão descrito serão 
-            exibidos.   
-
+</table>
 
 <div style = "text-align: right; margin-top: 2em;">
 <button onclick="window.history.back()" style ="font-size:22px;">←</button>

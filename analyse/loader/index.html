@@ -401,9 +401,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#definicao" class="md-nav__link">
+  <a href="#metodo" class="md-nav__link">
     <span class="md-ellipsis">
-      Definição
+      Método
     </span>
   </a>
   
@@ -413,6 +413,39 @@
   <a href="#arquivos" class="md-nav__link">
     <span class="md-ellipsis">
       Arquivos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquivos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exception" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exception
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
     </span>
   </a>
   
@@ -436,12 +469,24 @@
 
 <h1 id="loader"><strong>Loader</strong></h1>
 <h2 id="instancia"><strong>Instancia</strong></h2>
-<p>ANALYSES = ANALYSE(<a href="../../main/engine/">engine</a>)</p>
-<h2 id="definicao"><strong>Definição</strong></h2>
-<p style="font-size: 17px;">O método <strong>ANALYSES.LOADER().CHOICE()</strong> é responsável por carregar arquivos com extensão .XLSX para ser utilizado pelas ferramentas de Análise.</p>
+<p>analyse = ANALYSE(<a href="../../main/engine/">engine</a>)</p>
+<h2 id="metodo"><strong>Método</strong></h2>
+<p style="font-size: 17px;">O método <strong>analyse.LOADER().CHOICE()</strong> carrega um arquivo com nomenclatura padrão do  <strong><i>Evobench</i></strong> com extensão .XLSX para ser utilizado pelas ferramentas de Análise.</p>
 
 <h2 id="arquivos"><a href="../files/">Arquivos</a></h2>
-<p style="font-size: 17px;">Configuração da nomenclatura de arquivos adotado no <strong><i>Evobench</i></strong> .</p>
+<p style="font-size: 17px;">Configuração da nomenclatura de arquivos adotado no <strong><i>Evobench</i></strong>.</p>
+
+<h3 id="exemplo"><strong>Exemplo</strong></h3>
+<p style="font-size: 17px;"><strong><i>R10_B15G300P100M3K5D2N6t083645.xlsx</i></strong>.</p>
+
+<h2 id="exception"><strong>Exception</strong></h2>
+<p style="font-size: 17px;">A ordem das siglas e os seus valores precisam ser obedecidos para gerar arquivo .XLSX no padrão do <strong><i>Evobench</i></strong>.</p>
+
+<pre><code>
+</code></pre>
+<h2 id="notes"><strong>Notes</strong></h2>
+<p style="font-size: 17px;">Em LOADER(), apenas os arquivos .XLSX com padrão de nomenclatura serão exibidos.<p>  
+
 
 <div style = "text-align: right; margin-top: 2em;">
 <button onclick="window.history.back()" style ="font-size:22px;">←</button>
