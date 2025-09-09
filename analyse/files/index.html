@@ -397,62 +397,55 @@
 <ul>   
 <li><p style="font-size: 17px;"><strong><i>R:</i></strong> Nome do MOEA ou amostra gerada por Evobench</p>
 <ul>
-<li><p style="font-size: 17px;"><strong>1 → 'IN POF'  :</strong> Amostra de soluções não dominadas da POF</p></li>
+<li><p style="font-size: 17px;"><strong>1 → 'IN POF'  :</strong> Amostra de soluções não dominadas da POF</p></i>
 <li><p style="font-size: 17px;"><strong>2  → 'OUT POF' :</strong> Amostra de soluções dominadas da POF</p></li>
 <li><p style="font-size: 17px;"><strong>3  → 'NEAR POF':</strong> Amostra de soluções próximas a POF</p></li>
 <li><p style="font-size: 17px;"><strong>10 → 'NSGA-3'  :</strong> Algoritimo evolutivo (MOEA)</p></li>
-<li><p style="font-size: 17px;"><strong>11 → "SPEA-2"  :</strong> Algoritimo evolutivo (MOEA)</p></li>
-<li><p style="font-size: 17px;"><strong>12 → "UNSGA-3" :</strong> Algoritimo evolutivo (MOEA)</p></li>
-<li><p style="font-size: 17px;"><strong>13 → "MOEAD"   :</strong> Algoritimo evolutivo (MOEA)</p></li>
-<li><p style="font-size: 17px;"><strong>14 → "RVEA"    :</strong> Algoritimo evolutivo (MOEA)</p></li>
-<li><p style="font-size: 17px;"><strong>15 → "NSGA-2"  :</strong> Algoritimo evolutivo (MOEA)</p></li>
+<li><p style="font-size: 17px;"><strong>11 → 'SPEA-2'  :</strong> Algoritimo evolutivo (MOEA)</p></li>
+<li><p style="font-size: 17px;"><strong>12 → 'UNSGA-3' :</strong> Algoritimo evolutivo (MOEA)</p></li>
+<li><p style="font-size: 17px;"><strong>13 → 'MOEAD"   :</strong> Algoritimo evolutivo (MOEA)</p></li>
+<li><p style="font-size: 17px;"><strong>14 → 'RVEA'    :</strong> Algoritimo evolutivo (MOEA)</p></li>
+<li><p style="font-size: 17px;"><strong>15 → 'NSGA-2'  :</strong> Algoritimo evolutivo (MOEA)</p></li>
 </ul>
 </li>
 
-<li><p style="font-size: 17px;"><strong><i>B:</i></strong> Nome do Problema de Benchmark:</p></li>
+<li><p style="font-size: 17px;"><strong><i>B:</i></strong> Nome do Problema de Benchmark:</p>
+<ul>
+<li><p style="font-size: 17px;"><strong>10 → 'DTLZ1'   :</strong>Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>20 → 'DTLZ2'   :</strong>Implementação do problema de Benchmark</p></i>  
+<li><p style="font-size: 17px;"><strong>30 → 'DTLZ3'   :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>40 → 'DTLZ4'   :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>50 → 'DTLZ5'   :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>60 → 'DTLZ6'   :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>70 → 'DTLZ7'   :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>80 → 'DTLZ8'   :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>90 → 'DTLZ9'   :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>11 → 'DPF1'    :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>12 → 'DPF2'    :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>13 → 'DPF3'    :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>14 → 'DPF4'    :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>15 → 'DPF5'    :</strong> Implementação do problema de Benchmark</p></li>
+<li><p style="font-size: 17px;"><strong>'Personalizado':</strong> Implementação do problema de Benchmark</p></li>
+</ul>
+</li>
+
 </ul>
 
 <ul>
 <li>Método:  <br />
           analyse.LOADER() 
         - Retorna uma instância de LOADER:   <br />
-          - Carrega um arquivo com nome padrão gerado por Evobench:
-                - R:  Nome do MOEA ou amostra gerada por Evobench:
-                           - Valor 1  → 'IN POF' : amostra de soluções não dominadas da POF
-                           - Valor 2  → 'OUT POF" : amostra de soluções dominadas da POF
-                           - Valor 3  → "NEAR POF": amostra de soluções próximas a POF
-                           - Valor 10 → "NSGA-3" : algoritimo evolutivo (MOEA)
-                           - Valor 11 → "SPEA-2" : algoritimo evolutivo (MOEA)
-                           - Valor 12 → "UNSGA-3": algoritimo evolutivo (MOEA)
-                           - Valor 13 → "MOEAD"    : algoritimo evolutivo (MOEA)
-                           - Valor 14 → "RVEA"     : algoritimo evolutivo (MOEA)
-                           - Valor 15 → "NSGA-2"   : algoritimo evolutivo (MOEA)
-                           - Personalizado         : algoritimo evolutivo (MOEA)
-                - B:  Nome do Problema de Benchmark:
-                           - Valor 10 → "DTLZ1"    : implementação do problema de Benchmark
-                           - Valor 20 → "DTLZ2"    : implementação do problema de Benchmark
-                           - Valor 30 → "DTLZ3"    : implementação do problema de Benchmark
-                           - Valor 40 → "DTLZ4"    : implementação do problema de Benchmark
-                           - Valor 50 → "DTLZ5"    : implementação do problema de Benchmark
-                           - Valor 60 → "DTLZ6"    : implementação do problema de Benchmark
-                           - Valor 70 → "DTLZ7"    : implementação do problema de Benchmark
-                           - Valor 80 → "DTLZ8"    : implementação do problema de Benchmark
-                           - Valor 90 → "DTLZ9"    : implementação do problema de Benchmark
-                           - Valor 11 → "DPF1"     : implementação do problema de Benchmark
-                           - Valor 12 → "DPF2"     : implementação do problema de Benchmark
-                           - Valor 13 → "DPF3"     : implementação do problema de Benchmark
-                           - Valor 14 → "DPF4"     : implementação do problema de Benchmark
-                           - Valor 15 → "DPF5"     : implementação do problema de Benchmark
-                           - Personalizado         : implementação do problema de Benchmark
-                - G → Valor para geração
-                - P → Valor para população
-                - M → Valor objetivos
-                - K → Valor para K = [XM]
-                - D → Valor para objetivos essenciais
-                - N → Valor para variáveis de decisão
-                - t → Tempo de criação no formato "%m%M%S"
-        - Exemplo:
-            R10_B15G300P100M3K5D2N6t083645.xlsx<pre><code>- Exception:                
+          - Carrega um arquivo com nome padrão gerado por Evobench:<pre><code>        - G → Valor para geração
+        - P → Valor para população
+        - M → Valor objetivos
+        - K → Valor para K = [XM]
+        - D → Valor para objetivos essenciais
+        - N → Valor para variáveis de decisão
+        - t → Tempo de criação no formato "%m%M%S"
+- Exemplo:
+    R10_B15G300P100M3K5D2N6t083645.xlsx
+
+- Exception:                
     A ordem das siglas e os seus valores precisam ser obedecidos para gerar 
     arquivo .XLSX no padrão do Evobench.
 
