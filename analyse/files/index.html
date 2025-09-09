@@ -406,9 +406,8 @@
 <td>1</td>
 <td>IN POF/td>
 <td>Amostra de soluções não dominadas da POF</td>
-</td>
-
-
+</tr>
+</table>
 
 <li><p style="font-size: 17px;"><strong>1 </strong>       → 'IN POF'  :Amostra de soluções não dominadas da POF</p></i>
 <li><p style="font-size: 17px;"><strong>2  → 'OUT POF' :</strong> Amostra de soluções dominadas da POF</p></li>
@@ -443,31 +442,30 @@
 </li>
 
 </ul>
-
-- Método:    
+<ul>
+<li>Método:  <br />
           analyse.LOADER() 
-        - Retorna uma instância de LOADER:     
-          - Carrega um arquivo com nome padrão gerado por Evobench:
+        - Retorna uma instância de LOADER:   <br />
+          - Carrega um arquivo com nome padrão gerado por Evobench:<pre><code>        - G → Valor para geração
+        - P → Valor para população
+        - M → Valor objetivos
+        - K → Valor para K = [XM]
+        - D → Valor para objetivos essenciais
+        - N → Valor para variáveis de decisão
+        - t → Tempo de criação no formato "%m%M%S"
+- Exemplo:
+    R10_B15G300P100M3K5D2N6t083645.xlsx
 
-                - G → Valor para geração
-                - P → Valor para população
-                - M → Valor objetivos
-                - K → Valor para K = [XM]
-                - D → Valor para objetivos essenciais
-                - N → Valor para variáveis de decisão
-                - t → Tempo de criação no formato "%m%M%S"
-        - Exemplo:
-            R10_B15G300P100M3K5D2N6t083645.xlsx
+- Exception:                
+    A ordem das siglas e os seus valores precisam ser obedecidos para gerar 
+    arquivo .XLSX no padrão do Evobench.
 
-        - Exception:                
-            A ordem das siglas e os seus valores precisam ser obedecidos para gerar 
-            arquivo .XLSX no padrão do Evobench.
-
-        - Notes:
-            Em LOADER, apenas os arquivos .XLSX com o mesmo padrão descrito serão 
-            exibidos.   
-
-
+- Notes:
+    Em LOADER, apenas os arquivos .XLSX com o mesmo padrão descrito serão 
+    exibidos.
+</code></pre>
+</li>
+</ul>
 <div style = "text-align: right; margin-top: 2em;">
 <button onclick="window.history.back()" style ="font-size:22px;">←</button>
 </div>
