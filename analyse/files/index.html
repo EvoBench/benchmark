@@ -16,7 +16,7 @@
     
     
       
-        <title>LOADER - Evobench</title>
+        <title>Files - Evobench</title>
       
     
     
@@ -57,11 +57,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#loader" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LOADER
+              Files
             
           </span>
         </div>
@@ -382,43 +377,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#definicao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Definição
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instancia" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instancia
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arquivosargs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Arquivos(args)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -434,13 +392,66 @@
 
 
 
-<h1 id="loader"><strong>LOADER</strong></h1>
-<h2 id="definicao"><strong>Definição</strong></h2>
-<h2 id="instancia">Instancia</h2>
-<p>ANALYSES =ANALYSE(<a href="../../main/engine/">engine</a>)</p>
-<h2 id="arquivosargs"><a href="../files/">Arquivos</a>(args)</h2>
-<p style="font-size: 17px;">Configuração da nomenclatura de arquivos adotado no <strong><i>Evobench</i></strong> .</p>
+  <h1>Files</h1>
 
+<ul>   
+<li>
+<p style="font-size: 17px;">ANALYSES.LOADER().CHOICE()</p>
+
+
+</li>
+</ul>
+
+<ul>
+<li>Método:  <br />
+          analyse.LOADER() 
+        - Retorna uma instância de LOADER:   <br />
+          - Carrega um arquivo com nome padrão gerado por Evobench:
+                - R:  Nome do MOEA ou amostra gerada por Evobench:
+                           - Valor 1  → 'IN POF' : amostra de soluções não dominadas da POF
+                           - Valor 2  → 'OUT POF" : amostra de soluções dominadas da POF
+                           - Valor 3  → "NEAR POF": amostra de soluções próximas a POF
+                           - Valor 10 → "NSGA-3" : algoritimo evolutivo (MOEA)
+                           - Valor 11 → "SPEA-2" : algoritimo evolutivo (MOEA)
+                           - Valor 12 → "UNSGA-3": algoritimo evolutivo (MOEA)
+                           - Valor 13 → "MOEAD"    : algoritimo evolutivo (MOEA)
+                           - Valor 14 → "RVEA"     : algoritimo evolutivo (MOEA)
+                           - Valor 15 → "NSGA-2"   : algoritimo evolutivo (MOEA)
+                           - Personalizado         : algoritimo evolutivo (MOEA)
+                - B:  Nome do Problema de Benchmark:
+                           - Valor 10 → "DTLZ1"    : implementação do problema de Benchmark
+                           - Valor 20 → "DTLZ2"    : implementação do problema de Benchmark
+                           - Valor 30 → "DTLZ3"    : implementação do problema de Benchmark
+                           - Valor 40 → "DTLZ4"    : implementação do problema de Benchmark
+                           - Valor 50 → "DTLZ5"    : implementação do problema de Benchmark
+                           - Valor 60 → "DTLZ6"    : implementação do problema de Benchmark
+                           - Valor 70 → "DTLZ7"    : implementação do problema de Benchmark
+                           - Valor 80 → "DTLZ8"    : implementação do problema de Benchmark
+                           - Valor 90 → "DTLZ9"    : implementação do problema de Benchmark
+                           - Valor 11 → "DPF1"     : implementação do problema de Benchmark
+                           - Valor 12 → "DPF2"     : implementação do problema de Benchmark
+                           - Valor 13 → "DPF3"     : implementação do problema de Benchmark
+                           - Valor 14 → "DPF4"     : implementação do problema de Benchmark
+                           - Valor 15 → "DPF5"     : implementação do problema de Benchmark
+                           - Personalizado         : implementação do problema de Benchmark
+                - G → Valor para geração
+                - P → Valor para população
+                - M → Valor objetivos
+                - K → Valor para K = [XM]
+                - D → Valor para objetivos essenciais
+                - N → Valor para variáveis de decisão
+                - t → Tempo de criação no formato "%m%M%S"
+        - Exemplo:
+            R10_B15G300P100M3K5D2N6t083645.xlsx<pre><code>- Exception:                
+    A ordem das siglas e os seus valores precisam ser obedecidos para gerar 
+    arquivo .XLSX no padrão do Evobench.
+
+- Notes:
+    Em LOADER, apenas os arquivos .XLSX com o mesmo padrão descrito serão 
+    exibidos.
+</code></pre>
+</li>
+</ul>
 <div style = "text-align: right; margin-top: 2em;">
 <button onclick="window.history.back()" style ="font-size:22px;">←</button>
 </div>
